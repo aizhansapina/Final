@@ -16,8 +16,6 @@ namespace final2
         int cntt = 1;
         int cn = 1 / 2;
         
-        
-
         public Form1()
         {
             InitializeComponent();
@@ -40,12 +38,10 @@ namespace final2
             //cnt = 1;
 
             if (a % 2 == 0)
-                textBox1.Text = c.ToString();
+                textBox1.Text = (c).ToString();
             else
-                textBox1.Text = (b - 1).ToString();
-          
-
-                
+                textBox1.Text = (b).ToString();
+                  
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

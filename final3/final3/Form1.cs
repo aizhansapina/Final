@@ -27,12 +27,12 @@ namespace final3
                 button.BackColor = Color.Yellow;
                 cnt++;
             }
-            if (button.BackColor == Color.Yellow)
+            else if (button.BackColor == Color.Yellow)
             {
                 button.BackColor = Color.Blue;
                 cnt++;
             }
-            if (button.BackColor == Color.Blue)
+            else if (button.BackColor == Color.Blue)
             {
                 button.BackColor = Color.Red;
                 cnt++;
