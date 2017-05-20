@@ -13,6 +13,7 @@ namespace final2
     public partial class Form1 : Form
     {
         int cnt = 1;
+        int cntt = 1;
         public Form1()
         {
             InitializeComponent();
@@ -26,14 +27,16 @@ namespace final2
         private void button_Click(object sender, EventArgs e)
         {
             int a = cnt++;
+            int b = cntt++;
             Button button = sender as Button;
             button.Text = a.ToString();
-            textBox1.Text = a.ToString();
-
+            textBox1.Text = "0";
+            //cnt = 1;
+            
             if (a % 2 == 0)
-            {
-                textBox1.Text = a.ToString();
-            }
+                textBox1.Text = b.ToString();
+            
+                
         }
     }
 }
