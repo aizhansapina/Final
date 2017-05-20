@@ -13,7 +13,9 @@ namespace final2
     public partial class Form1 : Form
     {
         int cnt = 1;
-        int cntt = 1;
+        int cntt = 0;
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -30,13 +32,20 @@ namespace final2
             int b = cntt++;
             Button button = sender as Button;
             button.Text = a.ToString();
-            textBox1.Text = "0";
+            textBox1.Text = a.ToString(); ;
             //cnt = 1;
             
             if (a % 2 == 0)
                 textBox1.Text = b.ToString();
-            
+          
+
                 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }
