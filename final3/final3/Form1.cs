@@ -21,14 +21,24 @@ namespace final3
         private void button1_Click(object sender, EventArgs e)
         {
             Button button = sender as Button;
-            button.BackColor = Color.Yellow;
-            cnt++;
-            button.BackColor = Color.Blue;
-            cnt++;
-            button.BackColor = Color.Red;
-            cnt++;
+            if (button.BackColor == Color.White)
+            {
+                button.BackColor = Color.Yellow;
+                cnt++;
+            }
+            if (button.BackColor == Color.Yellow)
+            {
+                button.BackColor = Color.Blue;
+                cnt++;
+            }
+            if (button.BackColor == Color.Blue)
+            {
+                button.BackColor = Color.Red;
+                cnt++;
+            }
+        
             if (cnt == 4)
-                cnt = 0;
+                cnt = 1;
         }
     }
 }
