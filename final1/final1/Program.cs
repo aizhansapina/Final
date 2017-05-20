@@ -22,7 +22,7 @@ namespace final1
 
             StreamReader sw = new StreamReader(@"C:\Users\Айжан\Desktop\Final\final1\final1\bin\Debug\Task1\file1.txt");
             StreamReader sw2 = new StreamReader(@"C:\Users\Айжан\Desktop\Final\final1\final1\bin\Debug\Task1\file2.txt");
-            //StreamReader sw3 = new StreamReader(@"C:\Users\Айжан\Desktop\Final\final1\final1\bin\Debug\Task1\file3.txt");
+            
 
             string[] s = sw.ReadToEnd().Split();
             
@@ -37,34 +37,18 @@ namespace final1
                     if (a % j == 0 && b % j == 0)
                         cnt++;
                 }
-
-                if (cnt == 4)
+               
+                if (cnt == 1)
                 {
                     Console.WriteLine("yes");
                 }
-                else
+                else if (cnt > 1)
                 {
                     Console.WriteLine("no");
                 }
                 Console.ReadKey();
-                /*for (int j = 1; j <= b; j++)
-                {
-                    if (a % j == 0)
-                        cnt++;
-                }
-
-                if (cnt == 2)
-                {
-                    Console.WriteLine("yes");
-                }
-                else
-                {
-                    Console.WriteLine("no");
-                }
-                 */
+                
             }
-
-
         }
     }
 }
