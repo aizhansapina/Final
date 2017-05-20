@@ -14,15 +14,15 @@ namespace final4
     {
         public static int x = 100;
         public static int y = 100;
-        //Circle circle = new Circle(x, y);
-        //SolidBrush b = new SolidBrush(Color.Gainsboro);
+        Circle circle = new Circle(x, y);
+        
         SolidBrush b2 = new SolidBrush(Color.BlueViolet);
+
         public Form1()
         {
             InitializeComponent();
         }
        
-      
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -33,16 +33,14 @@ namespace final4
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            //e.Graphics.FillPath(b, circle.path);
+            //e.Graphics.FillPath(b2, circle.path);
             e.Graphics.FillEllipse(b2, x + 30, y + 70, 100, 100);
-            //e.Graphics.FillEllipse(b2, x + 120, y + 70, 50, 50);
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             y += 5;
-            //circle = new Circle(x, y);
+            circle = new Circle(x, y);
             Refresh();
         }
     }
