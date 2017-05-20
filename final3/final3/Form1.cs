@@ -21,7 +21,8 @@ namespace final3
         private void button1_Click(object sender, EventArgs e)
         {
             Button button = sender as Button;
-            if (button.BackColor == Color.White)
+
+            if (button.BackColor == Color.Red)
             {
                 button.BackColor = Color.Yellow;
                 cnt++;
@@ -36,9 +37,9 @@ namespace final3
                 button.BackColor = Color.Red;
                 cnt++;
             }
-        
-            if (cnt == 4)
-                cnt = 1;
+            
+            if (cnt == 2)
+                cnt = 0;
         }
     }
 }
