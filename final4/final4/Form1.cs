@@ -14,7 +14,7 @@ namespace final4
     {
         public static int x = 100;
         public static int y = 100;
-        Circle circle = new Circle(x, y);
+        //Circle circle = new Circle(x, y);
         
         SolidBrush b2 = new SolidBrush(Color.BlueViolet);
 
@@ -28,9 +28,7 @@ namespace final4
         {
 
         }
-
-
-
+        
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             //e.Graphics.FillPath(b2, circle.path);
@@ -39,8 +37,9 @@ namespace final4
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            y += 5;
-            circle = new Circle(x, y);
+            y += 3;
+            //circle = new Circle(x, y);
+
             Refresh();
         }
     }
