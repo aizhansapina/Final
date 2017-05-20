@@ -12,8 +12,8 @@ namespace final4
 {
     public partial class Form1 : Form
     {
-        public static int x = 200;
-        public static int y = 200;
+        public static int x = 100;
+        public static int y = 100;
         //Circle circle = new Circle(x, y);
         //SolidBrush b = new SolidBrush(Color.Gainsboro);
         SolidBrush b2 = new SolidBrush(Color.BlueViolet);
