@@ -12,9 +12,9 @@ namespace final2
 {
     public partial class Form1 : Form
     {
-        int cnt = 1;
+        int cnt = 0;
         int cntt = 1;
-        int cn = 1 / 2;
+        
         
         public Form1()
         {
@@ -30,7 +30,6 @@ namespace final2
         {
             int a = cnt++;
             int b = cntt++;
-            int c = cn++;
             
             Button button = sender as Button;
             button.Text = a.ToString();
@@ -38,9 +37,9 @@ namespace final2
             //cnt = 1;
 
             if (a % 2 == 0)
-                textBox1.Text = (c).ToString();
-            else
                 textBox1.Text = (b).ToString();
+            else
+                textBox1.Text = (b - 1).ToString();
                   
         }
 
